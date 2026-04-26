@@ -3,65 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Saya</title>
+  <title>Toko Cute Pink Shop</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
+      font-family: 'Arial', sans-serif;
+      background: #ffe6f0;
+      color: #444;
+    }
+
+    header {
+      background: #ff99c8;
+      padding: 20px;
       text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
     }
 
     .container {
-      padding: 80px 20px;
+      padding: 20px;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+    .subtitle {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #666;
     }
 
-    p {
-      font-size: 18px;
-      opacity: 0.9;
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 200px;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #ff4d88;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 10px 0;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: white;
-      color: #1e3c72;
-      border-radius: 25px;
+      padding: 10px 15px;
+      background: #ff99c8;
+      color: white;
+      border-radius: 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 14px;
       transition: 0.3s;
     }
 
     .btn:hover {
-      background: #ddd;
+      background: #ff66a3;
     }
 
     footer {
-      margin-top: 80px;
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
       font-size: 12px;
-      opacity: 0.7;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
+
+  <header>
+    🌸 Cute Pink Shop 🌸
+  </header>
+
   <div class="container">
-    <h1>welcome to market dadafloff </h1>
-    <p>happy shoping guyss. cmiww</p>
+    <h2>selamat datang di market dadafloff 💕</h2>
+    <p class="subtitle">happy shoping guys. cmiww ✨</p>
 
-    <a class="btn" href="#">Klik Saya</a>
+    <div class="products">
 
-    <footer>
-      Dibuat dengan GitHub Pages 🚀
-    </footer>
+      <div class="card">
+        <h3>Sticker Pack</h3>
+        <p>Stiker lucu pastel</p>
+        <p class="price">Rp 10.000</p>
+        <a class="btn" href="#">Beli</a>
+      </div>
+
+      <div class="card">
+        <h3>Tote Bag</h3>
+        <p>Pink aesthetic bag</p>
+        <p class="price">Rp 35.000</p>
+        <a class="btn" href="#">Beli</a>
+      </div>
+
+      <div class="card">
+        <h3>Phone Case</h3>
+        <p>Case cute pastel</p>
+        <p class="price">Rp 25.000</p>
+        <a class="btn" href="#">Beli</a>
+      </div>
+
+    </div>
   </div>
+
+  <footer>
+    Made with 💖 GitHub Pages
+  </footer>
+
 </body>
 </html>
